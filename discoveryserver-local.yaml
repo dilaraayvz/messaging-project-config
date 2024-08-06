@@ -1,21 +1,9 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/authserver
-    username: postgres
-    password: test
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
-
 server:
-  port: 8083
+  port: 8888
+
 eureka:
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:8888/eureka/
-    registerWithEureka: true
-    fetchRegistry: true
-
+        defaultZone: http://localhost:8888/eureka/

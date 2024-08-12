@@ -19,5 +19,5 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
 jwt:
-  secret: yourSecretKeyHere
-  expiration: 86400000  # 1 day in milliseconds
+  secret: s6Q3mMkWa3vDHEIYO4fKlEXA+JO1pYXEMUGfG0zNAAwp2sCgacB6hYT1umS7qRIstYbgFT0anGjIuCTOD+8ai61M5o3W7Bbq0JRjAM4zmpvkqxaku0o1nD9phonZe2GUyFZHJO46TlsHWMmS0bwaGSEYd0HqYu6Il9b9vYR2ziCmYZz9Ihul8deSs+Fubq4m4PBRxG5OG4C5dNAM6Lce6ERe3gBnHYQ7KwsNNyjfEo+xHxlRO7K/HL3Krie9OSadwH2dD9vCvloibkvd37emGKbaFvsmE8bomTwmaE+yXPpIxkZUYzC8bLssHFVVkEhKkcdeWZ++3mVKHLWhL3yCL3yd2Y3FGPsnJcbhwhQFdus=
+  expiration: 600000

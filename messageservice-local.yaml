@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/messages
+    url: jdbc:postgresql://localhost:5432/messagedb
     username: postgres
     password: test
   jpa:

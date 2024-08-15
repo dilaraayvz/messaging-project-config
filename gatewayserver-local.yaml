@@ -21,10 +21,10 @@ spring:
           predicates:
             - Path=/api/v1/messages/**
         -  id: websocketservice
-          uri: lb://websocketservice
-          predicates:
+           uri: lb://websocketservice
+           predicates:
             - Path=/ws/**
-          filters:
+           filters:
             - RemoveRequestHeader=Sec-WebSocket-Protocol
             - RemoveRequestHeader=Sec-WebSocket-Version
 server:

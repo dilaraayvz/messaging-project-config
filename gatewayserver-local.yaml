@@ -20,6 +20,13 @@ spring:
           uri: lb://messageservice
           predicates:
             - Path=/api/v1/messages/**
+        -  id: websocketservice
+          uri: lb://websocketservice
+          predicates:
+            - Path=/ws/**
+          filters:
+            - RemoveRequestHeader=Sec-WebSocket-Protocol
+            - RemoveRequestHeader=Sec-WebSocket-Version
 server:
   port: 8080
 
